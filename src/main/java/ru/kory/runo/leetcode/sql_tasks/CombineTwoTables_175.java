@@ -1,9 +1,7 @@
 package ru.kory.runo.leetcode.sql_tasks;
 
 public class CombineTwoTables_175 {
-
-    // TASK
-
+    // Task
     /*
     Table: Person
     +-------------+---------+
@@ -26,16 +24,16 @@ public class CombineTwoTables_175 {
     | state       | varchar |
     +-------------+---------+
     addressId is the primary key (column with unique values) for this table.
-
     Each row of this table contains information about the city and state of one person with ID = PersonId.
+
     Write a solution to report the first name, last name, city, and state of each person in the Person table.
     If the address of a personId is not present in the Address table, report null instead.
     Return the result table in any order.
     The result format is in the following example.
      */
 
-    // RESOLVE
-    String sqlRequest = """
+    // Solution
+    String query = """
             select p.firstName, p.lastName, a.city, a.state
             from Person as p
             left join Address as a on p.personId = a.personId
