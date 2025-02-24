@@ -6,10 +6,17 @@
 
     <groupId>ru.kory.runo</groupId>
     <artifactId>LeetCodeKory</artifactId>
-    <version>${revision</version>
+    <version>${project.version}</version>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>kory-lessons-sql</module>
+        <module>kory-lessons-java</module>
+        <module>kory-lessons-kotlin</module>
+    </modules>
 
     <properties>
-        <revision>1.0.0</revision>
+        <project.version>1.0.0</project.version>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
