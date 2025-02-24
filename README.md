@@ -1,5 +1,5 @@
 
-### Template for lessons
+### Tasks from popular platform services to learn algorithms
 
 #### About
 
