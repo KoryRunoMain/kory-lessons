@@ -1,6 +1,6 @@
 package ru.kory.runo.solutions.leetcode_sql.easy;
 
-public class _607_SalesPerson implements SqlQueryLeetCodeTasks {
+public class _607_SalesPerson {
     String sqlQuery = """
             select s.name as name
             from SalesPerson as s
@@ -12,8 +12,7 @@ public class _607_SalesPerson implements SqlQueryLeetCodeTasks {
             );
             """;
 
-    @Override
-    public String getLeetCodeSqlTask(Long id) {
+    public String getSolution() {
         return sqlQuery;
     }
 }

@@ -1,6 +1,6 @@
 package ru.kory.runo.solutions.leetcode_sql.easy;
 
-public class _183_CustomersWhoNeverOrder implements SqlQueryLeetCodeTasks {
+public class _183_CustomersWhoNeverOrder {
     String sqlQuery = """
             select c.name as Customers
             from Customers as c
@@ -8,8 +8,7 @@ public class _183_CustomersWhoNeverOrder implements SqlQueryLeetCodeTasks {
             where o.customerId is null
             """;
 
-    @Override
-    public String getLeetCodeSqlTask(Long id) {
+    public String getSolution() {
         return sqlQuery;
     }
 }

@@ -1,6 +1,6 @@
 package ru.kory.runo.solutions.leetcode_sql.easy;
 
-public class _182_DuplicateEmails implements SqlQueryLeetCodeTasks {
+public class _182_DuplicateEmails {
     String sqlQuery = """
             select p.email as email
             from Person as p
@@ -8,8 +8,7 @@ public class _182_DuplicateEmails implements SqlQueryLeetCodeTasks {
             having count(p.email) > 1;
             """;
 
-    @Override
-    public String getLeetCodeSqlTask(Long id) {
+    public String getSolution() {
         return sqlQuery;
     }
 }

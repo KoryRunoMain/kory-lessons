@@ -1,6 +1,6 @@
 package ru.kory.runo.solutions.leetcode_sql.easy;
 
-public class _181_EmployeesEarningMoreThanTheirManagers implements SqlQueryLeetCodeTasks {
+public class _181_EmployeesEarningMoreThanTheirManagers {
     String sqlQuery = """
             select e.name as Employee
             from Employee as e
@@ -8,8 +8,7 @@ public class _181_EmployeesEarningMoreThanTheirManagers implements SqlQueryLeetC
             where e.salary > m.salary
             """;
 
-    @Override
-    public String getLeetCodeSqlTask(Long id) {
+    public String getSolution() {
         return sqlQuery;
     }
 }
